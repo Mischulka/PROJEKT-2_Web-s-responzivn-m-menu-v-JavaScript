@@ -1,0 +1,47 @@
+@media (max-width: 600px) {
+  header {
+    position: relative;
+  }
+  header nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    background-color: var(--header-color);
+    width: 100%;
+  }
+  .menu-icon {
+    display: block;
+    color: var(--hamburger-icon-color);
+    font-size: 23px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  nav li {
+    margin: 2px 0;
+  }
+  header nav li {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  header nav li a:hover {
+    color: var(--menu-hover-color);
+    border-bottom: 1px solid var(--animation-color);
+  }
+  footer p {
+    font-size: 10px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: 600px) {
+  header nav {
+    display: block !important;
+  }
+}
